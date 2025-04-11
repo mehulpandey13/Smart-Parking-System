@@ -16,7 +16,7 @@ The goal is to demonstrate how computer vision can assist in automating smart ci
 
 5. Build a customizable, open-source solution that works with various camera angles and video qualities
 
-# 🧠 How It Works (Simplified)
+# 🧠 How It Works
 1. Initial Setup: A reference image from the parking lot is used to manually define the coordinates of each parking spot.
 
 2. Detection: Each video frame is passed through the YOLO model to detect cars.
@@ -45,6 +45,8 @@ The model successfully tracks occupied and empty spots live from a parking video
 Count updates dynamically based on vehicle detection.
 
 Can be adapted for live CCTV camera feeds or higher-quality parking lot footage.
+<video src="outcc.mp4" controls width="600"></video> 
+
 
 # 🔧 Future Improvements
 Integrate Mask R-CNN or YOLOv8 for better detection under occlusions
