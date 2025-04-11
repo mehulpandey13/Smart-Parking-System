@@ -5,37 +5,29 @@ This project is a real-time AI-powered solution designed to monitor vehicle pres
 
 The goal is to demonstrate how computer vision can assist in automating smart city infrastructure—particularly in optimizing parking space utilization and surveillance.
 
-#🎯 Project Objective
-🎥 Analyze a parking lot video feed in real-time
+# 🎯 Project Objective
+1. Analyze a parking lot video feed in real-time
 
-🚗 Detect vehicles using YOLO-based object detection
+2. Detect vehicles using YOLO-based object detection
 
-📍 Determine whether each marked parking slot is occupied or vacant
+3. Determine whether each marked parking slot is occupied or vacant
 
-🧠 Maintain a real-time count of available parking spots
+4. Maintain a real-time count of available parking spots
 
-🛠️ Build a customizable, open-source solution that works with various camera angles and video qualities
+5. Build a customizable, open-source solution that works with various camera angles and video qualities
 
-#🧠 How It Works (Simplified)
-Initial Setup:
+# 🧠 How It Works (Simplified)
+1. Initial Setup: A reference image from the parking lot is used to manually define the coordinates of each parking spot.
 
-A reference image from the parking lot is used to manually define the coordinates of each parking spot.
+2. Detection: Each video frame is passed through the YOLO model to detect cars.
 
-Detection:
+3. Matching: If a detected car overlaps a defined parking zone, that spot is marked "occupied"; otherwise, it's "empty".
 
-Each video frame is passed through the YOLO model to detect cars.
+4. Visualization: The system draws boxes around each spot and updates the real-time count of empty spaces.
 
-Matching:
+5. The result is a live video feed with overlaid visual indicators showing which spots are free and how many are available.
 
-If a detected car overlaps a defined parking zone, that spot is marked "occupied"; otherwise, it's "empty".
-
-Visualization:
-
-The system draws boxes around each spot and updates the real-time count of empty spaces.
-
-💡 The result is a live video feed with overlaid visual indicators showing which spots are free and how many are available.
-
-#📉 Challenges & Real-World Limitations
+# 📉 Challenges & Real-World Limitations
 Despite using powerful AI models, real-world constraints affect accuracy:
 
 Camera Position: An angled or low-mounted camera makes it hard to distinguish cars.
@@ -46,16 +38,15 @@ Occlusions: People walking by or reflections (like from mirrors or windows) can 
 
 Model Limitations: YOLO, while fast, may sometimes miss cars or detect false positives, especially under complex lighting or perspective.
 
-✨ With cleaner, top-down video footage and improved camera placement, accuracy improves significantly.
 
-#🎥 Demo Highlights
+# 🎥 Demo Highlights
 The model successfully tracks occupied and empty spots live from a parking video.
 
 Count updates dynamically based on vehicle detection.
 
 Can be adapted for live CCTV camera feeds or higher-quality parking lot footage.
 
-#🔧 Future Improvements
+# 🔧 Future Improvements
 Integrate Mask R-CNN or YOLOv8 for better detection under occlusions
 
 Implement a parking alert system
