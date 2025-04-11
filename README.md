@@ -45,7 +45,7 @@ The model successfully tracks occupied and empty spots live from a parking video
 Count updates dynamically based on vehicle detection.
 
 Can be adapted for live CCTV camera feeds or higher-quality parking lot footage.
-<video src="outcc.mp4" controls width="600"></video> 
+
 
 
 # 🔧 Future Improvements
